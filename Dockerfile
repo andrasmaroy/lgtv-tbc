@@ -13,4 +13,5 @@ WORKDIR /app/
 COPY --from=builder /app/lgtv-tbc ./
 
 EXPOSE 8765
-ENTRYPOINT ["./lgtv-tbc -addr :8765"]
+ENTRYPOINT ["./lgtv-tbc"]
+CMD ["-addr", ":8765"]
